@@ -9,7 +9,6 @@ public class CalculatorTest {
     void plus(){
         int result = Calculator.plus(1,2);
         Assertions.assertEquals(3, result);
-        Assertions.assertEquals(5, result);
     }
 
 }

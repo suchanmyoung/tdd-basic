@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ExpiryDateCalculatorTest {
@@ -65,8 +66,7 @@ public class ExpiryDateCalculatorTest {
                 .firstBillingDate(LocalDate.of(2019, 5, 31))
                 .billingDate(LocalDate.of(2019,6,30))
                 .build();
-
-        assertExpiryDate(payData3, LocalDate.of(2019,7,31));
+        assertExpiryDate(payData3, LocalDate.of(2019,6,30));
     }
 
     @Test
